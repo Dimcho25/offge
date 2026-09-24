@@ -1,8 +1,7 @@
 {
   "name": "off.ge",
   "tagline": "ქვიზები, სიები და ყველაფერი, რაზეც დღეს ლაპარაკობენ",
-  "logo": "",
-  "favicon": "",
+  "logo": "/images/darklogofull.png",
   "url": "https://dimcho25.github.io/offge",
   "nav": [
     {
@@ -55,8 +54,7 @@
   "contact": {
     "title": "კონტაქტი",
     "body": "იდეა გაქვს ქვიზისთვის, ან შეცდომა შენიშნე? მოგვწერე.",
-    "email": "hello@off.ge",
-    "formspree": ""
+    "email": "hello@off.ge"
   },
   "privacy": {
     "title": "კონფიდენციალურობა",
