@@ -424,3 +424,8 @@ blockquote cite { font-style: normal; font-size: 14px; color: var(--ink-3); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+/* ---------- logo in the top-left corner (home button), menu button on the right ---------- */
+.hd-main .logo-hd { order: 0; }
+.hd-main .hd-tools { order: 1; }
+.hd-main .hd-burger { order: 2; margin-left: 0; margin-right: -10px; }
+.drawer-panel { inset: 0 0 0 auto; box-shadow: -10px 0 40px rgba(0, 0, 0, .15); }
