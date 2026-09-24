@@ -1,0 +1,432 @@
+# ─────────────────────────────────────────────────────────────
+#  ქვიზო admin panel: Pages CMS (free) · https://app.pagescms.org
+#  This file tells Pages CMS what can be edited and how.
+#  Everything you save there is committed to GitHub, and the site
+#  rebuilds itself about a minute later.
+# ─────────────────────────────────────────────────────────────
+
+media:
+  input: images
+  output: /images
+  extensions: [jpg, jpeg, png, webp, gif, svg]
+  rename: safe
+
+settings:
+  content:
+    merge: true   # keep any extra data in files that this form doesn't show
+
+content:
+  # ───────────────────────── QUIZZES ─────────────────────────
+  - name: quizzes
+    label: Quizzes
+    type: collection
+    path: content/quizzes
+    format: json
+    filename: "{year}-{month}-{day}-{hour}{minute}{second}.json"
+    view:
+      primary: title
+      fields: [title, type, category, date, featured, trending, draft]
+      search: [title, description]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Headline
+        type: string
+        required: true
+        description: "Promise a result: „აირჩიე საუზმე და გეტყვით, რომელი ქალაქი ხარ“"
+      - name: description
+        label: Short description
+        type: text
+        description: One sentence. Shown on cards and in Facebook previews.
+      - name: type
+        label: Quiz type
+        type: select
+        default: personality
+        required: true
+        options:
+          values:
+            - name: personality
+              label: "Personality: “Which ___ are you?” (answers count toward results)"
+            - name: trivia
+              label: "Trivia: right and wrong answers (result depends on score)"
+      - name: category
+        label: Category
+        type: reference
+        required: true
+        options:
+          collection: categories
+          value: "{fields.id}"
+          label: "{fields.name}"
+          search: "name"
+      - name: image
+        label: Cover picture
+        type: image
+        description: Wide (landscape) photos look best.
+      - name: imageCredit
+        label: Photo credit
+        type: string
+        description: "e.g. ფოტო: Unsplash"
+      - name: author
+        label: Author
+        type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: featured
+        label: Big spot on the homepage
+        type: boolean
+      - name: trending
+        label: Show in „ტრენდში“ (trending)
+        type: boolean
+      - name: draft
+        label: Hide from the site
+        type: boolean
+      - name: slug
+        label: Web address (optional)
+        type: string
+        pattern:
+          regex: "^[a-z0-9-]*$"
+          message: Only a–z, 0–9 and dashes, e.g. which-dog
+        description: Leave empty to make it from the headline. Set it if you want the link to stay the same when you change the headline.
+      - name: results
+        label: Results
+        type: object
+        description: "Personality: answers point to these by number (Result 1, 2…). Trivia: each result starts at a score."
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "Result {index}: {title}"
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: text
+            label: Text
+            type: text
+          - name: image
+            label: Picture
+            type: image
+          - name: min
+            label: "Trivia only: shown from this many correct answers"
+            type: number
+            options:
+              min: 0
+      - name: questions
+        label: Questions
+        type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{index}. {text}"
+        fields:
+          - name: text
+            label: Question
+            type: string
+            required: true
+          - name: image
+            label: Picture above the question (optional)
+            type: image
+          - name: explain
+            label: "Trivia only: shown after answering (optional)"
+            type: string
+          - name: answers
+            label: Answers
+            type: object
+            description: Give every answer a picture to show them as picture tiles.
+            list:
+              min: 2
+              collapsible:
+                collapsed: false
+                summary: "{index}. {text}"
+            fields:
+              - name: text
+                label: Answer
+                type: string
+              - name: image
+                label: Picture (optional)
+                type: image
+              - name: result
+                label: "Personality only: counts toward"
+                type: select
+                options:
+                  placeholder: Choose a result
+                  values:
+                    - { name: "1", label: "Result 1" }
+                    - { name: "2", label: "Result 2" }
+                    - { name: "3", label: "Result 3" }
+                    - { name: "4", label: "Result 4" }
+                    - { name: "5", label: "Result 5" }
+                    - { name: "6", label: "Result 6" }
+                    - { name: "7", label: "Result 7" }
+                    - { name: "8", label: "Result 8" }
+              - name: correct
+                label: "Trivia only: this is the correct answer"
+                type: boolean
+
+  # ───────────────────────── ARTICLES ─────────────────────────
+  - name: articles
+    label: Articles
+    type: collection
+    path: content/articles
+    format: json
+    filename: "{year}-{month}-{day}-{hour}{minute}{second}.json"
+    view:
+      primary: title
+      fields: [title, category, date, featured, trending, draft]
+      search: [title, description]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Headline
+        type: string
+        required: true
+        description: "Numbers work well: „12 რამ, რასაც მხოლოდ თბილისელი გაიგებს“"
+      - name: description
+        label: Short description
+        type: text
+      - name: category
+        label: Category
+        type: reference
+        required: true
+        options:
+          collection: categories
+          value: "{fields.id}"
+          label: "{fields.name}"
+          search: "name"
+      - name: image
+        label: Cover picture
+        type: image
+      - name: imageCredit
+        label: Photo credit
+        type: string
+      - name: author
+        label: Author
+        type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: featured
+        label: Big spot on the homepage
+        type: boolean
+      - name: trending
+        label: Show in „ტრენდში“ (trending)
+        type: boolean
+      - name: draft
+        label: Hide from the site
+        type: boolean
+      - name: slug
+        label: Web address (optional)
+        type: string
+        pattern:
+          regex: "^[a-z0-9-]*$"
+          message: Only a–z, 0–9 and dashes
+        description: Leave empty to make it from the headline.
+      - name: blocks
+        label: Content
+        type: block
+        list: true
+        blockKey: type
+        description: "Add paragraphs, numbered list items, pictures and quotes. In text: **bold**, *italic*, [link](https://…), empty line = new paragraph."
+        blocks:
+          - name: p
+            label: Paragraph
+            fields:
+              - name: text
+                label: Text
+                type: text
+          - name: item
+            label: Numbered list item
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: image
+                label: Picture (optional)
+                type: image
+              - name: credit
+                label: Photo credit
+                type: string
+              - name: text
+                label: Text
+                type: text
+          - name: h
+            label: Subheading
+            fields:
+              - name: text
+                label: Subheading
+                type: string
+          - name: image
+            label: Picture
+            fields:
+              - name: image
+                label: Picture
+                type: image
+              - name: caption
+                label: Caption
+                type: string
+              - name: credit
+                label: Photo credit
+                type: string
+          - name: quote
+            label: Quote
+            fields:
+              - name: text
+                label: Quote
+                type: text
+              - name: by
+                label: Who said it
+                type: string
+
+  # ───────────────────────── CATEGORIES ─────────────────────────
+  - name: categories
+    label: Categories
+    type: collection
+    path: content/categories
+    format: json
+    filename: "{id}.json"
+    view:
+      primary: name
+      fields: [name, id, color, order]
+      sort: [order, name]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+        description: "e.g. საჭმელი"
+      - name: id
+        label: Web address
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: Only a–z, 0–9 and dashes, e.g. food
+        description: "Short latin name used in links: /category/food/. Don't change it after quizzes use it."
+      - name: color
+        label: Color
+        type: string
+        required: true
+        pattern:
+          regex: "^#[0-9a-fA-F]{6}$"
+          message: "A hex color like #e8590c"
+        description: "Hex color, e.g. #e8590c. Tints this category's quiz headers and labels."
+      - name: order
+        label: Order in menus
+        type: number
+        options:
+          min: 1
+
+  # ───────────────────────── SITE SETTINGS ─────────────────────────
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Site name
+        type: string
+        required: true
+        description: Used for the browser tab, share previews and when no logo is set.
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: logo
+        label: Logo
+        type: image
+        description: Wide logo with a transparent background looks best (shown about 40 px high). Leave empty to use images/logo.png if it exists.
+      - name: favicon
+        label: Browser tab icon (square)
+        type: image
+      - name: url
+        label: Website address
+        type: string
+        description: "e.g. https://yourname.github.io/kvizo (no slash at the end). Needed for Facebook previews."
+      - name: nav
+        label: Top menu
+        type: object
+        description: "Link: quizzes, articles, trending, about, contact, or category/<web address> (e.g. category/food)"
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label} → {route}"
+        fields:
+          - name: label
+            label: Text
+            type: string
+            required: true
+          - name: route
+            label: Link
+            type: string
+            required: true
+      - name: social
+        label: Social links
+        type: object
+        description: "Label Facebook, Instagram, TikTok, YouTube or X to get the right icon."
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Network
+            type: string
+            required: true
+          - name: url
+            label: Link
+            type: string
+            required: true
+      - name: about
+        label: About page
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: body
+            label: Text
+            type: text
+            description: Empty line = new paragraph.
+      - name: contact
+        label: Contact page
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: body
+            label: Text
+            type: text
+          - name: email
+            label: Email shown on the page
+            type: string
+          - name: formspree
+            label: Formspree form id (optional)
+            type: string
+            description: Make a free form at formspree.io and paste its id to show a working contact form.
+      - name: privacy
+        label: Privacy page
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: body
+            label: Text
+            type: text
