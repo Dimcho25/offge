@@ -1,6 +1,5 @@
 {
   "name": "off.ge",
-  "tagline": "ქვიზები, სიები და ყველაფერი, რაზეც დღეს ლაპარაკობენ",
   "logo": "/images/darklogofull.png",
   "url": "https://dimcho25.github.io/offge",
   "nav": [
@@ -59,5 +58,6 @@
   "privacy": {
     "title": "კონფიდენციალურობა",
     "body": "აქ განათავსე კონფიდენციალურობის პოლიტიკა.\n\nქვიზის პასუხები ინახება მხოლოდ შენს ბრაუზერში და არსად იგზავნება."
-  }
+  },
+  "favicon": "/images/darkbg.png"
 }
