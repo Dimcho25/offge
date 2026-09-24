@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* ============================================================
-   ქვიზო: build
+   off.ge: build
    Reads content/ (edited in Pages CMS) and writes the finished website to _site/.
    GitHub runs this for you automatically on every upload.
    To run it on your own computer:  node build.js
@@ -22,6 +22,14 @@ const notes = [];
 function readJSON(rel) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8").replace(/^\uFEFF/, ""));
 }
+// Accepts "dimcho25.github.io/offge", "https://off.ge/" etc. Returns "https://…" without a trailing slash, or "".
+function cleanUrl(u) {
+  u = String(u || "").trim().replace(/\/+$/, "");
+  if (!u) return "";
+  if (!/^https?:\/\//i.test(u)) u = "https://" + u;
+  try { new URL(u); return u; }
+  catch (e) { notes.push(`! Site settings: "Website address" (${u}) doesn't look like a web address, so it was ignored.`); return ""; }
+}
 function loadSite() {
   let raw;
   try { raw = readJSON("content/site.json"); }
@@ -31,10 +39,10 @@ function loadSite() {
   }
   const page = (p, fallback) => ({ title: (p && p.title) || fallback, body: (p && p.body) || "", email: p && p.email, formspree: p && p.formspree });
   const site = {
-    name: raw.name || "ქვიზო",
+    name: raw.name || "off.ge",
     tagline: raw.tagline || "",
     logo: raw.logo || "",
-    url: (raw.url || "").replace(/\/+$/, ""),
+    url: cleanUrl(raw.url),
     nav: (raw.nav || []).filter((n) => n && n.label && n.route).map((n) => ({ label: n.label, route: String(n.route).replace(/^\/+|\/+$/g, "") })),
     pages: { about: page(raw.about, "ჩვენ შესახებ"), contact: page(raw.contact, "კონტაქტი"), privacy: page(raw.privacy, "კონფიდენციალურობა") },
     footer: { social: (raw.social || []).filter((s) => s && s.label && s.url) }
@@ -239,7 +247,7 @@ function build() {
   for (const route of routes) {
     let base;
     if (route === "404") {
-      base = site.url ? new URL(site.url.replace(/\/*$/, "/")).pathname : "/";
+      try { base = site.url ? new URL(site.url + "/").pathname : "/"; } catch (e) { base = "/"; }
     } else {
       base = "../".repeat(KV.pathOf(route).split("/").filter(Boolean).length);
     }
