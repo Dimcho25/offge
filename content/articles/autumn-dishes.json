@@ -1,0 +1,51 @@
+{
+  "slug": "autumn-dishes",
+  "title": "10 შემოდგომის კერძი, რომელიც ამ სეზონზე აუცილებლად უნდა მოამზადო",
+  "description": "ჩურჩხელიდან ლობიომდე: მარტივი რეცეპტები სახლისთვის.",
+  "category": "food",
+  "author": "გიორგი მაისურაძე",
+  "date": "2026-09-21",
+  "image": "https://images.unsplash.com/photo-1578829779691-99b60bd8c7be?w=1200&q=80&auto=format&fit=crop",
+  "imageCredit": "ფოტო: Unsplash",
+  "trending": true,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "შემოდგომა საქართველოში რთველის, ყურძნისა და თბილი კერძების დროა."
+    },
+    {
+      "type": "item",
+      "title": "ჩურჩხელა",
+      "image": "https://images.unsplash.com/photo-1472352327492-9765783b74e1?w=1200&q=80&auto=format&fit=crop",
+      "credit": "ფოტო: Unsplash",
+      "text": "ტკბილი, ნიგვზიანი და სახლში გაკეთებული. საუკეთესოა."
+    },
+    {
+      "type": "item",
+      "title": "ხინკალი",
+      "image": "https://images.unsplash.com/photo-1687686515394-5f5b7d50b01b?w=1200&q=80&auto=format&fit=crop",
+      "credit": "ფოტო: Unsplash",
+      "text": "ცივ საღამოს ცხელ ხინკალს ვერაფერი შეედრება."
+    },
+    {
+      "type": "item",
+      "title": "აჭარული ხაჭაპური",
+      "image": "https://images.unsplash.com/photo-1758714068469-75887ca0b8c3?w=1200&q=80&auto=format&fit=crop",
+      "credit": "ფოტო: Unsplash",
+      "text": "კვერცხი, კარაქი და ცოტა მოთმინება."
+    },
+    {
+      "type": "item",
+      "title": "ლობიო ქოთანში",
+      "text": "მჭადთან და მჟავეულთან ერთად."
+    },
+    {
+      "type": "h",
+      "text": "ბონუსი"
+    },
+    {
+      "type": "p",
+      "text": "სრულ რეცეპტებს მალე ცალკე სტატიაში გამოვაქვეყნებთ."
+    }
+  ]
+}

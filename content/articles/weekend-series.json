@@ -1,0 +1,36 @@
+{
+  "slug": "weekend-series",
+  "title": "8 სერიალი, რომელსაც ერთ შაბათ-კვირაში დაასრულებ",
+  "description": "მოკლე, ემოციური და საშიშად გადამდები. (სათაურების ადგილი)",
+  "category": "tv",
+  "author": "ანა კაპანაძე",
+  "date": "2026-09-18",
+  "image": "https://images.unsplash.com/photo-1593784991188-c899ca07263b?w=1200&q=80&auto=format&fit=crop",
+  "imageCredit": "ფოტო: Unsplash",
+  "trending": true,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "ჩაიცვი ყველაზე კომფორტული ტანსაცმელი და მოამზადე პოპკორნი."
+    },
+    {
+      "type": "item",
+      "title": "სერიალის სახელი 1",
+      "image": "https://images.unsplash.com/photo-1584905066893-7d5c142ba4e1?w=1200&q=80&auto=format&fit=crop",
+      "credit": "ფოტო: Unsplash",
+      "text": "მოკლე აღწერა: რატომ ღირს ნახვა. რამდენი ეპიზოდია და სად უყურო."
+    },
+    {
+      "type": "item",
+      "title": "სერიალის სახელი 2",
+      "text": "მოკლე აღწერა: რატომ ღირს ნახვა."
+    },
+    {
+      "type": "item",
+      "title": "სერიალის სახელი 3",
+      "image": "https://images.unsplash.com/photo-1620177088258-c84147ee601f?w=1200&q=80&auto=format&fit=crop",
+      "credit": "ფოტო: Unsplash",
+      "text": "მოკლე აღწერა: რატომ ღირს ნახვა."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "which-dog",
+  "type": "personality",
+  "title": "აირჩიე შაბათ-კვირის გეგმა და გეტყვით, რომელი ძაღლი ხარ",
+  "description": "სამი კითხვა და შენი ოთხფეხა ალტერ-ეგო.",
+  "category": "animals",
+  "author": "ლუკა ჯაფარიძე",
+  "date": "2026-09-17",
+  "image": "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=1200&q=80&auto=format&fit=crop",
+  "imageCredit": "ფოტო: Unsplash",
+  "results": [
+    {
+      "title": "ჰასკი",
+      "image": "https://images.unsplash.com/photo-1568572933382-74d440642117?w=1200&q=80&auto=format&fit=crop",
+      "text": "ენერგიული, ცოტა დრამატული და სახლში ვერ ჩერდები. ყველა ლაშქრობაზე პირველი ხარ."
+    },
+    {
+      "title": "ფრანგული ბულდოგი",
+      "image": "https://images.unsplash.com/photo-1561754050-9a1ee0470c73?w=1200&q=80&auto=format&fit=crop",
+      "text": "მშვიდი, კომფორტის მოყვარული და საოცრად მეგობრული. დივანი შენი ტახტია."
+    },
+    {
+      "title": "გოლდენ რეტრივერი",
+      "image": "https://images.unsplash.com/photo-1693615775129-f2004d6e3e0b?w=1200&q=80&auto=format&fit=crop",
+      "text": "ყველას საყვარელი ხარ. ოთახში შესვლისას მზე ამოდის."
+    }
+  ],
+  "questions": [
+    {
+      "text": "შაბათის გეგმა:",
+      "answers": [
+        {
+          "text": "ლაშქრობა მთაში",
+          "image": "https://images.unsplash.com/photo-1594748526885-d184fe0259a0?w=1200&q=80&auto=format&fit=crop",
+          "result": "1"
+        },
+        {
+          "text": "დივანი და სერიალი",
+          "image": "https://images.unsplash.com/photo-1692188071339-2825a8a997f1?w=1200&q=80&auto=format&fit=crop",
+          "result": "2"
+        },
+        {
+          "text": "მეგობრებთან სუფრა",
+          "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=80&auto=format&fit=crop",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "დილით როგორ იღვიძებ?",
+      "answers": [
+        {
+          "text": "მაღვიძარამდე, სავსე ენერგიით",
+          "result": "1"
+        },
+        {
+          "text": "მეხუთე მაღვიძარაზე",
+          "result": "2"
+        },
+        {
+          "text": "ყავის სუნზე",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "შენი სუპერძალა:",
+      "answers": [
+        {
+          "text": "გამძლეობა",
+          "result": "1"
+        },
+        {
+          "text": "სიმშვიდე",
+          "result": "2"
+        },
+        {
+          "text": "ყველას ვუგებ",
+          "result": "3"
+        }
+      ]
+    }
+  ]
+}

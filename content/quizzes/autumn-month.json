@@ -1,0 +1,81 @@
+{
+  "slug": "autumn-month",
+  "type": "personality",
+  "title": "აირჩიე შემოდგომის რამდენიმე რამ და გეტყვით, რომელი თვე ხარ",
+  "description": "რთველის სექტემბერი, ოქროსფერი ოქტომბერი თუ წვიმიანი ნოემბერი?",
+  "category": "pop",
+  "author": "ნინო ბერიძე",
+  "date": "2026-09-23",
+  "image": "https://images.unsplash.com/photo-1506193503569-d57d2a678510?w=1200&q=80&auto=format&fit=crop",
+  "imageCredit": "ფოტო: Unsplash",
+  "results": [
+    {
+      "title": "სექტემბერი",
+      "image": "https://images.unsplash.com/photo-1472352327492-9765783b74e1?w=1200&q=80&auto=format&fit=crop",
+      "text": "რთველი, თბილი საღამოები და ახალი დასაწყისი. ენერგიით სავსე ხარ."
+    },
+    {
+      "title": "ოქტომბერი",
+      "image": "https://images.unsplash.com/photo-1459478309853-2c33a60058e7?w=1200&q=80&auto=format&fit=crop",
+      "text": "ფერადი, თბილი და ცოტა ნოსტალგიური. ყველაზე ლამაზ ფოტოებს შენ იღებ."
+    },
+    {
+      "title": "ნოემბერი",
+      "image": "https://images.unsplash.com/photo-1535688391459-479d308104f8?w=1200&q=80&auto=format&fit=crop",
+      "text": "მშვიდი და მყუდრო. საუკეთესო საღამო: წიგნი, პლედი და ცხელი ჩაი."
+    }
+  ],
+  "questions": [
+    {
+      "text": "აირჩიე სასმელი:",
+      "answers": [
+        {
+          "text": "ახალი ყურძნის წვენი",
+          "result": "1"
+        },
+        {
+          "text": "ცხელი კაპუჩინო",
+          "result": "2"
+        },
+        {
+          "text": "პიტნის ჩაი",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "აირჩიე ფერი:",
+      "answers": [
+        {
+          "text": "ყურძნისფერი",
+          "result": "1"
+        },
+        {
+          "text": "ოქროსფერი",
+          "result": "2"
+        },
+        {
+          "text": "რუხი",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "შაბათის გეგმა:",
+      "answers": [
+        {
+          "text": "რთველზე წასვლა",
+          "result": "1"
+        },
+        {
+          "text": "სეირნობა პარკში",
+          "result": "2"
+        },
+        {
+          "text": "მთელი დღე სახლში",
+          "result": "3"
+        }
+      ]
+    }
+  ]
+}

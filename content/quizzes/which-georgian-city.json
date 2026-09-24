@@ -1,0 +1,150 @@
+{
+  "slug": "which-georgian-city",
+  "type": "personality",
+  "title": "უპასუხე 5 კითხვას და გეტყვით, რომელი ქართული ქალაქი ხარ სინამდვილეში",
+  "description": "თბილისი, ბათუმი, ქუთაისი თუ სიღნაღი? შენი სული უკვე იცის.",
+  "category": "travel",
+  "author": "ნინო ბერიძე",
+  "date": "2026-09-21",
+  "image": "https://images.unsplash.com/photo-1603350576276-24747f7bbf40?w=1200&q=80&auto=format&fit=crop",
+  "imageCredit": "ფოტო: Unsplash",
+  "featured": true,
+  "trending": true,
+  "results": [
+    {
+      "title": "თბილისი",
+      "image": "https://images.unsplash.com/photo-1589786381692-3a58c80b3f9e?w=1200&q=80&auto=format&fit=crop",
+      "text": "ქაოსური, შთამაგონებელი და ყოველთვის გვიან გძინავს. ყველა გიცნობს, ყველგან გეპატიჟებიან და მაინც ახალ ადგილს პოულობ."
+    },
+    {
+      "title": "ბათუმი",
+      "image": "https://images.unsplash.com/photo-1625566360146-918001e76064?w=1200&q=80&auto=format&fit=crop",
+      "text": "თავისუფალი სული ხარ: ზღვა, მუსიკა და თავგადასავალი. გეგმები? ხვალისთვის გადავდოთ."
+    },
+    {
+      "title": "ქუთაისი",
+      "image": "https://images.unsplash.com/photo-1605282605124-7ce446647f57?w=1200&q=80&auto=format&fit=crop",
+      "text": "თბილი, ხუმარა და ერთგული. შენთან ყველას სახლში ჰგონია თავი და სუფრა არასდროს მთავრდება."
+    },
+    {
+      "title": "სიღნაღი",
+      "image": "https://images.unsplash.com/photo-1742529279236-36bcedb6c9ac?w=1200&q=80&auto=format&fit=crop",
+      "text": "რომანტიკოსი ხარ. გიყვარს ხედები, ნელი დილები და ღვინო, რომელსაც ამბავი აქვს."
+    }
+  ],
+  "questions": [
+    {
+      "text": "აირჩიე ხედი შენი ფანჯრიდან:",
+      "answers": [
+        {
+          "text": "ძველი უბნის სახურავები",
+          "image": "https://images.unsplash.com/photo-1561731172-9d906d7b13bf?w=1200&q=80&auto=format&fit=crop",
+          "result": "1"
+        },
+        {
+          "text": "ზღვა და სანაპირო",
+          "image": "https://images.unsplash.com/photo-1643792412669-f7900db4e0c1?w=1200&q=80&auto=format&fit=crop",
+          "result": "2"
+        },
+        {
+          "text": "ქვაფენილიანი ქუჩა",
+          "image": "https://images.unsplash.com/photo-1682714874581-f1f842d3c6e4?w=1200&q=80&auto=format&fit=crop",
+          "result": "3"
+        },
+        {
+          "text": "მთები და ვენახები",
+          "image": "https://images.unsplash.com/photo-1666592848489-0dbea32c9096?w=1200&q=80&auto=format&fit=crop",
+          "result": "4"
+        }
+      ]
+    },
+    {
+      "text": "აირჩიე საუზმე:",
+      "answers": [
+        {
+          "text": "ხაჭაპური და კაპუჩინო",
+          "image": "https://images.unsplash.com/photo-1534234757579-8ad69d218ad4?w=1200&q=80&auto=format&fit=crop",
+          "result": "1"
+        },
+        {
+          "text": "აჭარული, რა თქმა უნდა",
+          "image": "https://images.unsplash.com/photo-1758714068469-75887ca0b8c3?w=1200&q=80&auto=format&fit=crop",
+          "result": "2"
+        },
+        {
+          "text": "იმერული და მწვანილი",
+          "image": "https://images.unsplash.com/photo-1746185601009-3ddac4b23121?w=1200&q=80&auto=format&fit=crop",
+          "result": "3"
+        },
+        {
+          "text": "ახალი ყურძენი ვენახიდან",
+          "image": "https://images.unsplash.com/photo-1578829779691-99b60bd8c7be?w=1200&q=80&auto=format&fit=crop",
+          "result": "4"
+        }
+      ]
+    },
+    {
+      "text": "იდეალური შაბათი საღამო:",
+      "answers": [
+        {
+          "text": "ახალი ბარი, რომელზეც ყველა ლაპარაკობს",
+          "result": "1"
+        },
+        {
+          "text": "სანაპირო და მუსიკა გათენებამდე",
+          "result": "2"
+        },
+        {
+          "text": "დიდი სუფრა მეგობრებთან ერთად",
+          "result": "3"
+        },
+        {
+          "text": "მზის ჩასვლა ციხის გალავნიდან",
+          "result": "4"
+        }
+      ]
+    },
+    {
+      "text": "რომელი სიმღერა ჟღერს ახლა შენს თავში?",
+      "answers": [
+        {
+          "text": "ელექტრონული ბითი",
+          "result": "1"
+        },
+        {
+          "text": "საზაფხულო ჰიტი",
+          "result": "2"
+        },
+        {
+          "text": "ძველი ქართული ესტრადა",
+          "result": "3"
+        },
+        {
+          "text": "პოლიფონიური სიმღერა",
+          "result": "4"
+        }
+      ]
+    },
+    {
+      "text": "რას წაიღებდი უკაცრიელ კუნძულზე?",
+      "answers": [
+        {
+          "text": "ყურსასმენებს და პლეილისტს",
+          "result": "1"
+        },
+        {
+          "text": "მზის სათვალეს",
+          "result": "2"
+        },
+        {
+          "text": "ბებიას რეცეპტების რვეულს",
+          "result": "3"
+        },
+        {
+          "text": "ღვინის ბოთლს და წიგნს",
+          "result": "4"
+        }
+      ]
+    }
+  ]
+}

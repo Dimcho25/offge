@@ -1,0 +1,65 @@
+{
+  "name": "ქვიზო",
+  "tagline": "ქვიზები, სიები და ყველაფერი, რაზეც დღეს ლაპარაკობენ",
+  "logo": "",
+  "favicon": "",
+  "url": "",
+  "nav": [
+    {
+      "label": "ქვიზები",
+      "route": "quizzes"
+    },
+    {
+      "label": "ტრენდში",
+      "route": "trending"
+    },
+    {
+      "label": "სტატიები",
+      "route": "articles"
+    },
+    {
+      "label": "საჭმელი",
+      "route": "category/food"
+    },
+    {
+      "label": "სიყვარული",
+      "route": "category/love"
+    },
+    {
+      "label": "ცხოველები",
+      "route": "category/animals"
+    },
+    {
+      "label": "ფილმები",
+      "route": "category/tv"
+    }
+  ],
+  "social": [
+    {
+      "label": "Facebook",
+      "url": "https://facebook.com/"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://tiktok.com/"
+    }
+  ],
+  "about": {
+    "title": "ჩვენ შესახებ",
+    "body": "ქვიზო არის ქართული გასართობი საიტი: ქვიზები, სიები და ისტორიები, რომლებსაც მეგობრებს გაუზიარებ.\n\nაქ დაწერე, ვინ ხართ და რატომ შექმენით საიტი."
+  },
+  "contact": {
+    "title": "კონტაქტი",
+    "body": "იდეა გაქვს ქვიზისთვის, ან შეცდომა შენიშნე? მოგვწერე.",
+    "email": "hello@example.ge",
+    "formspree": ""
+  },
+  "privacy": {
+    "title": "კონფიდენციალურობა",
+    "body": "აქ განათავსე კონფიდენციალურობის პოლიტიკა.\n\nქვიზის პასუხები ინახება მხოლოდ შენს ბრაუზერში და არსად იგზავნება."
+  }
+}

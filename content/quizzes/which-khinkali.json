@@ -1,0 +1,102 @@
+{
+  "slug": "which-khinkali",
+  "type": "personality",
+  "title": "დაგეგმე სუფრა და გეტყვით, რომელი ხინკალი ხარ",
+  "description": "ქალაქური, მთიულური თუ სოკოს? სიმართლე ახლა გაირკვევა.",
+  "category": "food",
+  "author": "ანა კაპანაძე",
+  "date": "2026-09-19",
+  "image": "https://images.unsplash.com/photo-1762206083047-d83b6db1f757?w=1200&q=80&auto=format&fit=crop",
+  "imageCredit": "ფოტო: Unsplash",
+  "trending": true,
+  "results": [
+    {
+      "title": "ქალაქური ხინკალი",
+      "image": "https://images.unsplash.com/photo-1687686515394-5f5b7d50b01b?w=1200&q=80&auto=format&fit=crop",
+      "text": "კლასიკა, რომელიც ყველას უყვარს. სოციალური ხარ, თავდაჯერებული და ყოველთვის სუფრის ცენტრში."
+    },
+    {
+      "title": "მთიულური ხინკალი",
+      "image": "https://images.unsplash.com/photo-1660038442449-25bc1a4ee029?w=1200&q=80&auto=format&fit=crop",
+      "text": "ძლიერი, პირდაპირი და ტრადიციების ერთგული. შენს სიტყვას ყველა ენდობა."
+    },
+    {
+      "title": "სოკოს ხინკალი",
+      "image": "https://images.unsplash.com/photo-1612950365044-500b2d7ba712?w=1200&q=80&auto=format&fit=crop",
+      "text": "განსხვავებული და კრეატიული. ყველას არ ესმის შენი, მაგრამ ვინც გაიგებს, სამუდამოდ შეგიყვარებს."
+    }
+  ],
+  "questions": [
+    {
+      "text": "სუფრის მთავარი კერძი:",
+      "answers": [
+        {
+          "text": "მწვადი",
+          "result": "1"
+        },
+        {
+          "text": "ჩაქაფული",
+          "result": "2"
+        },
+        {
+          "text": "ბადრიჯანი ნიგვზით",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "რას დალევ?",
+      "answers": [
+        {
+          "text": "წითელ ღვინოს",
+          "image": "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200&q=80&auto=format&fit=crop",
+          "result": "1"
+        },
+        {
+          "text": "რაც თამადა დაასხამს",
+          "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=80&auto=format&fit=crop",
+          "result": "2"
+        },
+        {
+          "text": "ყავას, მერე ვნახოთ",
+          "image": "https://images.unsplash.com/photo-1534234757579-8ad69d218ad4?w=1200&q=80&auto=format&fit=crop",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "შენი როლი სუფრაზე:",
+      "answers": [
+        {
+          "text": "თამადა ვარ",
+          "result": "1"
+        },
+        {
+          "text": "ყველაზე ხმამაღლა ვმღერი",
+          "result": "2"
+        },
+        {
+          "text": "ფოტოებს ვიღებ",
+          "result": "3"
+        }
+      ]
+    },
+    {
+      "text": "რამდენ ხინკალს ჭამ ერთ ჯერზე?",
+      "answers": [
+        {
+          "text": "10-ს და კუდებს ვითვლი",
+          "result": "1"
+        },
+        {
+          "text": "ვინ ითვლის?",
+          "result": "2"
+        },
+        {
+          "text": "5-ს, მაგრამ ლამაზად",
+          "result": "3"
+        }
+      ]
+    }
+  ]
+}
