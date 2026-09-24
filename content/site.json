@@ -1,9 +1,7 @@
 {
   "name": "ქვიზო",
   "tagline": "ქვიზები, სიები და ყველაფერი, რაზეც დღეს ლაპარაკობენ",
-  "logo": "",
-  "favicon": "",
-  "url": "",
+  "url": "dimcho25.github.io",
   "nav": [
     {
       "label": "ქვიზები",
@@ -55,8 +53,7 @@
   "contact": {
     "title": "კონტაქტი",
     "body": "იდეა გაქვს ქვიზისთვის, ან შეცდომა შენიშნე? მოგვწერე.",
-    "email": "hello@example.ge",
-    "formspree": ""
+    "email": "hello@example.ge"
   },
   "privacy": {
     "title": "კონფიდენციალურობა",
