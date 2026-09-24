@@ -1,27 +1,23 @@
 {
-  "slug": "autumn-month",
+  "slug": "mkhedrionfrench",
   "type": "personality",
-  "title": "აირჩიე შემოდგომის რამდენიმე რამ და გეტყვით, რომელი თვე ხარ",
-  "description": "რთველის სექტემბერი, ოქროსფერი ოქტომბერი თუ წვიმიანი ნოემბერი?",
+  "title": "აირჩიე ფრანგული კერძები და გეტყვით რომელი მხედრიონელი ხარ",
   "category": "pop",
-  "author": "ნინო ბერიძე",
+  "author": "კაკო უძღებიშვილი",
   "date": "2026-09-23",
-  "image": "https://images.unsplash.com/photo-1506193503569-d57d2a678510?w=1200&q=80&auto=format&fit=crop",
-  "imageCredit": "ფოტო: Unsplash",
+  "image": "/images/chatgpt-image-sep-24-2026-100726-pm.png",
+  "imageCredit": "ფოტო: Jlllongzo",
   "results": [
     {
       "title": "სექტემბერი",
-      "image": "https://images.unsplash.com/photo-1472352327492-9765783b74e1?w=1200&q=80&auto=format&fit=crop",
       "text": "რთველი, თბილი საღამოები და ახალი დასაწყისი. ენერგიით სავსე ხარ."
     },
     {
       "title": "ოქტომბერი",
-      "image": "https://images.unsplash.com/photo-1459478309853-2c33a60058e7?w=1200&q=80&auto=format&fit=crop",
       "text": "ფერადი, თბილი და ცოტა ნოსტალგიური. ყველაზე ლამაზ ფოტოებს შენ იღებ."
     },
     {
       "title": "ნოემბერი",
-      "image": "https://images.unsplash.com/photo-1535688391459-479d308104f8?w=1200&q=80&auto=format&fit=crop",
       "text": "მშვიდი და მყუდრო. საუკეთესო საღამო: წიგნი, პლედი და ცხელი ჩაი."
     }
   ],
@@ -31,15 +27,18 @@
       "answers": [
         {
           "text": "ახალი ყურძნის წვენი",
-          "result": "1"
+          "result": "1",
+          "correct": false
         },
         {
           "text": "ცხელი კაპუჩინო",
-          "result": "2"
+          "result": "2",
+          "correct": false
         },
         {
           "text": "პიტნის ჩაი",
-          "result": "3"
+          "result": "3",
+          "correct": false
         }
       ]
     },
@@ -48,15 +47,18 @@
       "answers": [
         {
           "text": "ყურძნისფერი",
-          "result": "1"
+          "result": "1",
+          "correct": false
         },
         {
           "text": "ოქროსფერი",
-          "result": "2"
+          "result": "2",
+          "correct": false
         },
         {
           "text": "რუხი",
-          "result": "3"
+          "result": "3",
+          "correct": false
         }
       ]
     },
@@ -65,17 +67,23 @@
       "answers": [
         {
           "text": "რთველზე წასვლა",
-          "result": "1"
+          "result": "1",
+          "correct": false
         },
         {
           "text": "სეირნობა პარკში",
-          "result": "2"
+          "result": "2",
+          "correct": false
         },
         {
           "text": "მთელი დღე სახლში",
-          "result": "3"
+          "result": "3",
+          "correct": false
         }
       ]
     }
-  ]
+  ],
+  "featured": true,
+  "trending": true,
+  "draft": false
 }
