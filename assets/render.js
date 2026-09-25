@@ -240,6 +240,29 @@
       (moreHref ? '<a class="sec-more" href="' + moreHref + '">' + esc(moreLabel || "ყველა") + " " + I.arrow + "</a>" : "") + "</div>";
   }
 
+  /* ---------- video: YouTube, Vimeo, TikTok, Instagram, Facebook links, or an uploaded video file ---------- */
+  function videoEmbed(ctx, url) {
+    url = String(url || "").trim();
+    if (!url) return null;
+    var m;
+    if ((m = /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{11})/.exec(url)))
+      return { src: "https://www.youtube-nocookie.com/embed/" + m[1] + "?rel=0", tall: /\/shorts\//.test(url) };
+    if ((m = /vimeo\.com\/(?:video\/)?(\d+)/.exec(url))) return { src: "https://player.vimeo.com/video/" + m[1] };
+    if ((m = /tiktok\.com\/.*\/video\/(\d+)/.exec(url))) return { src: "https://www.tiktok.com/embed/v2/" + m[1], tall: true };
+    if ((m = /instagram\.com\/(?:[\w.]+\/)?(?:p|reel|reels|tv)\/([\w-]+)/.exec(url))) return { src: "https://www.instagram.com/p/" + m[1] + "/embed", tall: true };
+    if (/facebook\.com\/.+\/videos\/|facebook\.com\/watch|fb\.watch\//.test(url)) return { src: "https://www.facebook.com/plugins/video.php?show_text=false&href=" + encodeURIComponent(url) };
+    if (/\.(mp4|webm|mov|m4v)(\?|$)/i.test(url)) return { file: ctx.asset(url) };
+    return null;
+  }
+  function video(ctx, b) {
+    var link = b.url || b.file, v = videoEmbed(ctx, link), cap = [b.caption, b.credit].filter(Boolean).join(" · ");
+    if (!v) return link ? '<p class="video-link"><a href="' + esc(link) + '" target="_blank" rel="noopener">▶ ' + esc(b.caption || "ვიდეოს ნახვა") + "</a></p>" : "";
+    var inner = v.file
+      ? '<video src="' + esc(v.file) + '" controls playsinline preload="metadata"></video>'
+      : '<iframe src="' + esc(v.src) + '" title="' + esc(b.caption || "ვიდეო") + '" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    return '<figure class="fig video' + (v.tall ? " video-tall" : "") + '"><div class="video-box">' + inner + "</div>" + (cap ? "<figcaption>" + esc(cap) + "</figcaption>" : "") + "</figure>";
+  }
+
   /* ---------- header / footer ---------- */
   function shell(page, ctx) {
     var site = ctx.site, cur = ctx.route;
@@ -429,9 +452,10 @@
       if (b.type === "h") return '<h2 class="art-h">' + esc(b.text) + "</h2>";
       if (b.type === "quote") return "<blockquote><p>" + inline(b.text) + "</p>" + (b.by ? "<cite>" + esc(b.by) + "</cite>" : "") + "</blockquote>";
       if (b.type === "image") return figure(ctx, b.image, [b.caption, b.credit].filter(Boolean).join(" · "), 1200);
+      if (b.type === "video") return video(ctx, b);
       if (b.type === "item") {
         n++;
-        return '<section class="li"><h2 class="li-h"><span class="li-n">' + n + '</span><span>' + esc(b.title) + "</span></h2>" + figure(ctx, b.image, b.credit, 1200) + paras(b.text) + "</section>";
+        return '<section class="li"><h2 class="li-h"><span class="li-n">' + n + '</span><span>' + esc(b.title) + "</span></h2>" + (b.video ? video(ctx, { url: b.video, credit: b.credit }) : figure(ctx, b.image, b.credit, 1200)) + paras(b.text) + "</section>";
       }
       return "";
     }).join("");
