@@ -1,10 +1,10 @@
 {
-  "slug": "star-of-the-week",
+  "slug": "tsklopina-mystery-of-the-week",
   "title": "წყლოპინა ეზიკიელის სიტყვით გამოსვლა გაერო-ს გენერალური ასამბლეის 81-ე სესიაზე",
   "description": "2026 წლის გაერო-ს გენერალურ ასამბლეაზე სხვა ქვეყნების წარმომადგენლებთან ერთად წყლოპინა ეზიკიელიც იმყოფებოდა",
   "category": "politics",
   "author": "ჩორდი ლამია",
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "image": "/images/wylopo-un.jpg",
   "imageCredit": "ფოტო: Unsplash",
   "trending": true,
@@ -61,6 +61,6 @@
       "credit": "Mtavarry"
     }
   ],
-  "featured": false,
+  "featured": true,
   "draft": false
 }
