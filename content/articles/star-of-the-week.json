@@ -11,7 +11,17 @@
   "blocks": [
     {
       "type": "p",
-      "text": "გაეროს გენერალურ ასამბლეაზე წყლოპინა ეზიკიელის გამოსვლას დიდი უკმაყოფილება მოჰყვა.\nროგორც ვიდეოში ჩანს, ეზიკიელის გამოსვლისას დარბაზი 30-ზე მეტმა დელეგატმა პროტესტის ნიშნად დატოვა.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hyAu9qkcYy8?si=VBdCVfjn6juYatAP\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nდელეგატებმა უკმაყოფილება მას შემდეგ გამოთქვეს რაც წყლოპინა ეზიკიელმა ემიგრანტების მიმართ გაურკვეველი რემარკების წარმოთქმა დაიწყო\n"
+      "text": "გაეროს გენერალურ ასამბლეაზე წყლოპინა ეზიკიელის გამოსვლას დიდი უკმაყოფილება მოჰყვა.\n\nროგორც ვიდეოში ჩანს, ეზიკიელის გამოსვლისას დარბაზი 30-ზე მეტმა დელეგატმა პროტესტის ნიშნად დატოვა."
+    },
+    {
+      "type": "video",
+      "url": "https://youtu.be/hyAu9qkcYy8",
+      "caption": "Tsklopina Booed",
+      "credit": "CKM News"
+    },
+    {
+      "type": "p",
+      "text": "დელეგატებმა უკმაყოფილება მას შემდეგ გამოთქვეს, რაც წყლოპინა ეზიკიელმა ემიგრანტების მიმართ გაურკვეველი რემარკების წარმოთქმა დაიწყო:"
     },
     {
       "type": "quote",
@@ -19,8 +29,36 @@
       "by": "წყლოპინა ეზიკიელი"
     },
     {
+      "type": "p",
+      "text": "სოციალურ ქსელებში წყლოპინას კომენტარებს გაურკვევლობა მოჰყვა. ბევრმა მომხმარებელმა მომხდარს ე.წ. „მიმებით“ უპასუხა."
+    },
+    {
       "type": "image",
-      "image": "/images/screenshot-2026-09-25-at-154252.png"
+      "image": "/images/b1ztxj.jpg",
+      "caption": "წყლოპინა_მიმი1",
+      "credit": "Gertrude Ballsmier"
+    },
+    {
+      "type": "image",
+      "image": "/images/screenshot-2026-09-25-at-154937.png",
+      "caption": "დაბნეული FB მომხმარებელი",
+      "credit": "Wyaldidoba Wyaldiboba Iuza"
+    },
+    {
+      "type": "image",
+      "image": "/images/screenshot-2026-09-25-at-154252-1.png",
+      "caption": "ცნობილი პოლიტიკური კომენტატორი",
+      "credit": "Borkine Borkiine"
+    },
+    {
+      "type": "p",
+      "text": "ცოტა ხანში, ამერიკული სამთავრობო მედიის ცნობით, ნიუ-იორკის მერმა ზოჰრან მამდანიმ წყლოპინა ეზიკიელის მიმართ დახვრეტის ბრძანება გასცა. უცნობია, შეასრულეს თუ არა აღნიშნული ბრძანება მეტროპოლიტენის პოლიციის წარმომადგენლებმა, თუმცა ეს აშკარად მკაფიო მესიჯია ეზიკიელისა და მისნაირების მიმართ."
+    },
+    {
+      "type": "image",
+      "image": "/images/screenshot-2026-09-25-at-154611.png",
+      "caption": "მამდანის მუქარა",
+      "credit": "Mtavarry"
     }
   ],
   "featured": false,
