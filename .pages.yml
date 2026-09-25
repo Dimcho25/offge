@@ -8,7 +8,7 @@
 media:
   input: images
   output: /images
-  extensions: [jpg, jpeg, png, webp, gif, svg]
+  extensions: [jpg, jpeg, png, webp, gif, svg, mp4, webm, mov]
   rename: safe
 
 settings:
@@ -256,6 +256,10 @@ content:
               - name: image
                 label: Picture (optional)
                 type: image
+              - name: video
+                label: Video link instead of the picture (optional)
+                type: string
+                description: YouTube, Vimeo, TikTok, Instagram or Facebook link.
               - name: credit
                 label: Photo credit
                 type: string
@@ -279,6 +283,22 @@ content:
                 type: string
               - name: credit
                 label: Photo credit
+                type: string
+          - name: video
+            label: Video
+            fields:
+              - name: url
+                label: Video link
+                type: string
+                description: "Paste a YouTube, Vimeo, TikTok, Instagram or Facebook link (YouTube is best)."
+              - name: file
+                label: Or upload a short video file (.mp4, under 20 MB)
+                type: file
+              - name: caption
+                label: Caption
+                type: string
+              - name: credit
+                label: Credit
                 type: string
           - name: quote
             label: Quote
